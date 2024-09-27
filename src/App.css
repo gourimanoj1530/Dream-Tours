@@ -1,0 +1,69 @@
+/* Container for the entire app */
+.app-container {
+  height: 90%;
+  overflow-x: hidden;
+}
+
+/* Header and Navbar styling */
+.header, .navbar {
+  background-color: #006769;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+/* Logo styling */
+.header .logo, .navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Playwrite GB S', cursive;
+  color: yellow;
+}
+
+/* Contact info styling */
+.header .contact-info, .navbar .contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.header .contact-info div, .navbar .contact-info div {
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+/* Button styling */
+.header .login, .header .register, .navbar .login-btn, .navbar .register-btn {
+  background-color: yellow;
+  color: #006769;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 2px solid green;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* Background image */
+.background-image {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-image: url('/public/pexels-jonathan-lassen-1263409-2404667.jpg'); /* Update path based on folder structure */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 60px; /* Offset for fixed header/navbar */
+}
+
+/* Removed Overlay styling */
